@@ -68,8 +68,56 @@ img { max-width: 100%; display: block; }
 
 .brand {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 12px;
   color: #fff;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Placeholder company logo badge — swap for a real <img class="logo-badge"> when a logo file exists */
+.logo-badge {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* Placeholder professional-body badges (NIESV / ESVARBON) — swap for real logo images when available */
+.member-badges {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.member-badge {
+  width: 64px;
+  height: 64px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.06);
+  border: 1px dashed rgba(255,255,255,0.35);
+  color: #cfd6dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.62rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  padding: 4px;
 }
 
 .brand-name {
