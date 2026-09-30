@@ -78,21 +78,13 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
 }
 
-/* Placeholder company logo badge — swap for a real <img class="logo-badge"> when a logo file exists */
+/* Company logo mark in the header */
 .logo-badge {
   width: 42px;
   height: 42px;
   flex-shrink: 0;
-  border-radius: 50%;
-  background: var(--color-accent);
-  color: var(--color-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-weight: bold;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
+  display: block;
+  object-fit: contain;
 }
 
 /* Professional-body logos (NIESV / ESVARBON) — white tile so the dark artwork shows on the dark footer */
