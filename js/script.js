@@ -9,6 +9,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Hero background slideshow: crossfade through .hero-slide images every few seconds.
+  var slides = document.querySelectorAll('.hero-slide');
+  if (slides.length > 1) {
+    var currentSlide = 0;
+    setInterval(function () {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }, 5000);
+  }
+
   // Contact form: currently just prevents a real submit since there's no backend yet.
   // EDIT ME: replace this with a real submit (e.g. fetch() to your form endpoint / mailto service).
   var form = document.querySelector('#contact-form');
